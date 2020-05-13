@@ -16,5 +16,6 @@ model.fit(X,y)
 
 print(model.coef_, model.intercept_)
 
-
+model.predict(X[:5])
+#return 1d array
 
