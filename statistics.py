@@ -8,5 +8,5 @@ print("50th percentile: ",np.percentile(data,50))
 print("25th percentile: ",np.percentile(data,25))
 print("75th percentile: ",np.percentile(data,75))
 print("standard deviation: ",np.std(data))
-print("variance: ",np.variance(data)) 
+print("variance: ",np.var(data)) 
 
