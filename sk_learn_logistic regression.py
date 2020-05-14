@@ -1,5 +1,7 @@
 import pandas as py 
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
 
 df=read_csv(data.csv) 
 
@@ -16,6 +18,12 @@ model.fit(X,y)
 
 print(model.coef_, model.intercept_)
 
-model.predict(X[:5])
+y_predict=model.predict(X)
 #return 1d array
+
+print("Accuracy: ", accuracy_score(y,y_predict))
+print("Precision: ", presicion_score(y,y_predict)) 
+print("Recall: ",recall_score(y,y_predict)) 
+print("F1 score: ",f1_score(y,y_predict)) 
+
 
